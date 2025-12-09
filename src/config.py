@@ -1,9 +1,10 @@
 from dataclasses import dataclass
+from pathlib import Path
 
 
 @dataclass
 class CONFIG:
-    dataset = '../signatures'
+    dataset = Path('../datasets/CEDAR/')
     original_signatures_class = 'full_org'
     forged_signatures_class = 'full_forg'
     size = (350, 543)
